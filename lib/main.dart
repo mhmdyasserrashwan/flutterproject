@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'api/api.dart';
+
 void main() {
+  Api api = Api();
+  api.getMovies();
   runApp(MaterialApp(
     home: Homescreen(),
   ));
